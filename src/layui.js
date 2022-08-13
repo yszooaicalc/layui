@@ -780,6 +780,9 @@
   
   //exports layui
   win.layui = new Layui();
-  
+    //全局变量
+  for (var key in GLOBAL) {
+    config[key] = GLOBAL[key];
+  }
 }(window); //gulp build: layui-footer
 
